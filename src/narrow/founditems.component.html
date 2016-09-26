@@ -1,0 +1,7 @@
+<ul class="list-group" id="found-items-list">
+    <li class="list-group-item clearfix" ng-repeat="item in $ctrl.items">
+        <button class="btn btn-warning pull-right" ng-click="$ctrl.onRemove({ index: $index })">Don't want this one!</button>
+        <strong>{{item.short_name}}, {{item.name}}</strong>
+        <p>{{item.description}}</p>
+    </li>
+</ul>
